@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS-2</title>
+</head>
+<body>
+    <h1>Distintos tipos de <mark>TYPE</mark> en los FORMULARIOS</h1>
+
+    <fieldset>
+        <legend>
+            <mark>Tipos de TYPE en los FORMULARIOS:</mark>
+        </legend>
+        <label>
+            <b>TEXT</b> → Texto comun
+            <input name="name" type="text"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>PASSWORD</b> → Texto para contraseñas
+            <input name="password" type="password"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>RADIO</b> → Para que pueda elegir una opcion(les tengo q poner el mismo NOMBRE)
+            <br>
+            Masculino
+            <input name="radio" type="radio"/>
+        </label>  
+        <br>  
+        <label>
+            Femenino
+            <input name="radio" type="radio"/>
+        </label>  
+        <br>
+        <label>
+            Raro
+            <input name="radio" type="radio"/>
+        </label> 
+        <br><hr>
+        <label>
+            <b>SELECT</b> → Para que pueda elegir una opcion con lista desplegable(les tengo q poner el mismo NOMBRE) <br>
+                 <select name="opciones" id="">
+                    <option value="ferrari">Ferrari</option>
+                    <option value="alfaRomeo">Alfa Romeo</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                 </select>        
+        </label>   
+        <br><hr>  
+        <label>
+            <b>CHECKBOX</b> → Para q pueda elegir una o mas opciones
+            <br>
+            Regla
+            <input name="checkbox" type="checkbox"/>
+        </label> 
+        <br>
+        <label>
+            Lapicera
+            <input name="checkbox" type="checkbox"/>
+        </label>
+        <br>
+        <label>
+            Escuadra
+            <input name="checkbox" type="checkbox"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>NUMBER</b> → Puede servir para las edades
+            <br>
+            Seleccione su EDAD
+            <input name="number" type="number" value="16"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>EMAIL</b> → Para poner EMAIL 
+            <br>
+            Ingrese EMAIL
+            <input name="email" type="email" placeholder="asd@gmail.com" required=""/>
+        </label>
+        <br><hr>
+        <label>
+            <b>DATE</b> → Para las FECHAS
+            <br>
+            Ingrese Fecha de Nacimiento
+            <input name="date" type="date"/>
+        </label>
+        <br> 
+        <label>
+            <b>Fecha por SEMANA</b>:
+            <input name="semana" type="week"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>URL</b> o <b>LINKS</b>  
+            <input name="url" type="url"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>ARCHIVOS</b> o <b>IMAGENES</b>
+            <br>   
+            <input name="archivos" type="file"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>RANGE</b> → Un RANGO
+            <br>   
+            Ingrese Salario aproximado:
+            <input name="range"  type="range" max="500000" min="60000"/>
+        </label>
+        <br><hr>
+        <label>
+            <b>TIME</b> → Horario
+            <br>   
+            Ingrese Hora de la cita
+            <input name="time"  type="time" />
+        </label>
+        <br><hr>
+        <label>
+            <input name="submit" type="submit"  onclick="alert('Formulario Enviado!')" value="Enviar Form!">
+        </label>
+
+        <br><hr>
+        <h3>FECHA CON LIMITE</h3>
+        <form>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+          </form>
+    </fieldset>
+</body>
+</html>

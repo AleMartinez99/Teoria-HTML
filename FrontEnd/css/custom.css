@@ -1,0 +1,21 @@
+.bg {
+    background-image: url(../images/3d-space-wallpaper-preview.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(209, 16, 167);
+
+}
+#parr3 {
+    color: blueviolet;
+}
+
+.parrafo {
+    color: green;
+}
+
+p {
+    color: blue!important; 
+}

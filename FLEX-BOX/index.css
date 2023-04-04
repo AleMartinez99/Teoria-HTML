@@ -1,0 +1,29 @@
+.flex-container-vertical {
+    display: flex;
+    width: 1200px;
+    height: 400px;
+
+    border: 1px solid black; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+    gap: 2%;
+   /* justify-content: center; */
+   /* align-items: stretch; */
+    
+}
+
+#item-2 {
+  
+    align-self: flex-end;
+   /* flex-grow: 1; */
+}
+     
+ 
+
+.flex-item {
+    background-color: DodgerBlue;
+    margin: 10px;
+    padding: 40px;
+    font-size: 50px;
+}

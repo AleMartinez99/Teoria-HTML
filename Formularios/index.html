@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+     <header>
+        <h1><mark>FORMULARIOS</mark> en HTML</h1>
+     </header>
+
+     <section>
+        <form action="" method="POST" target="_blank">
+            <label for="nombre">Nombre </label>
+            <input id="nombre" name="nombre" type="text"/>
+            <!--Aca con el ID hago referencia al INPUT, con el FOR -->
+            <br>
+
+            <!--En este ejemplo no necesito el FOR porq el IMPUT, va dentro del LABEL-->
+            <label>Apellido
+            <input name="apellido" type="text"/>
+            </label>
+
+            <br>
+
+            <label for="">
+                Deja tu comentario
+                <textarea name="comentarios" cols="20" rows="1">
+                </textarea>
+            </label>
+
+            <br>
+
+            <label>
+                <input type="submit" name="submit"/>
+                <input type="reset" name="reset"/> <!--Para resetear todos los datos y volverlos a enviar-->
+            </label>
+
+            <br>
+
+            <label>
+                Genero
+                <select>
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Down</option>
+                </select>
+            </label>
+
+            <br><br><hr><br>
+
+            <h3 >Formulario mas ordenado con fieldset y el legend</h3>
+            <fieldset>
+                <legend>
+                    Datos Personales
+                </legend>
+                <label style="color: blue;">
+                    Nombre
+                    <input name="nombre" type="text" placeholder="nombre" required="" style="color: blue;"/>                    
+                </label>
+                <label>
+                    Apellido
+                     <input name="apellido" type="text" placeholder="apellido" required="" />                     
+                </label>
+                <label>
+                    Email
+                     <input name="email" type="email" placeholder="asd@gmail.com" required=""/>
+                </label>
+                <label>
+                    Contraseña
+                     <input name="contraseña" type="password" placeholder="password" required=""/>
+                </label>
+                <label>
+                    Edad
+                     <input name="edad" type="number" placeholder="edad" value="18"/>
+                </label>
+                <label>
+                    <input name="nada" type="text" value="SOLO LECTURA" readonly=""/>
+                </label>
+                <label>
+                    <input name="submit" type="submit" onclick="alert('Comentario Enviado, muchas gracias!!!')">
+                </label>
+            </fieldset>
+        </form>
+
+     </section>
+        
+</body>
+</html>

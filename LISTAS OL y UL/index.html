@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTAS OL UL</title>
+</head>
+<body>
+
+    <header><h1><mark>Tipos de LISTAS en HTML</mark></h1></header>
+
+    <nav>
+        <a href="#ordenada">Listas ordenada</a>  <br>     
+        <a href="#desordenada">Lista desordenada</a>  <br>
+        <a href="#definicion">Lista de definicion</a> <br>
+        <a href="#desplegable">Lista desplegable</a>  <br>
+    </nav>
+    <hr/>
+    <section id="ordenada">
+        <h3>Lista <mark>ORDENADA:</mark></h3>
+        <ol>
+            <li>Enero</li>
+            <li>Febrero</li>
+            <li>Marzo</li>
+        </ol>
+
+        <h3>Lista <mark>ORDENADA con NUMEROS ROMANOS</mark></h3>
+        <!-- En las LISTAS ORDENADA tenemos para cambiar el TYPE-->
+        <ol type="I">   <!-- I o i, para numero romano-->
+                        <!-- Tambien podemos poner A/a para letras -->
+            <li>Enero</li>
+            <li>Febrero</li>
+            <li>Marzo</li>
+        </ol>
+
+        <h3>Lista <mark>ORDENADA AL REVEZ</mark></h3>    
+        <!-- Agregamos el atributo reversed="" -->   
+        <ol type="I" reversed="">                            
+            <li>Enero</li>
+            <li>Febrero</li>
+            <li>Marzo</li>
+        </ol>
+    </section>
+
+    <hr/> <!-- BARRA HORIZONTAL -->
+
+    <section id="desordenada">
+        <h3>Lista <mark>DESORDENADA:</mark></h3>
+        <!-- En las LISTAS DESORDENADAS tenemos para cambiar el TYPE-->
+        <ul type="square">  <!-- disc, viene por defecto-->
+                            <!-- Tambien tenemos circle -->
+                            <!-- square, es un cuadrado-->
+            <li>Primero</li>
+            <li>Segundo</li>
+            <li>Tercero</li>  
+        </ul>        
+    </section>
+    
+    <hr/> <!-- BARRA HORIZONTAL -->
+    
+    <section id="definicion">
+        <h3>Lista de <mark>DEFINICION:</mark></h3> <!-- Como un DICCIONARIO -->
+        <dl>  <!-- DL ETIQUETA CONTENEDORA -->
+            <dt>HTML</dt> <!-- DT ETIQUETA PADRE-->
+            <dd>    <!-- DD ETIQUETA HIJA-->
+                El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos. 
+                Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
+            </dd>
+
+            <dt>CSS</dt>
+            <dd>
+                CSS son las siglas en inglés para «hojas de estilo en cascada» (Cascading Style Sheets). Básicamente, 
+                es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario l
+                as visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.
+            </dd>
+
+            <dt>JAVASCRIPT</dt>
+            <dd>
+                JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales a mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web                
+            </dd>
+        </dl>
+    </section>
+
+    <hr/> <!-- BARRA HORIZONTAL -->
+
+    <section id="desplegable"> 
+        <h3>Lista <mark>DESPLEGABLE:</mark></h3> <!-- Compuesto por 2 etiquetas -->
+        <details>
+            <summary> <!-- Dentro de SUMMARY, va el TITULO de lo que se va a desplegar -->
+                Esto es una Lista DESPLEGABLE
+            </summary>
+            <!-- Y por FUERA del SUMMARI, lo que se muestra cuando se despliega -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum tenetur deleniti quaerat non magni minima officiis corrupti.
+                Ab, facilis quae culpa vel voluptates molestias accusantium sequi tempore ipsam dolorem.
+            </p>
+        </details>
+    </section>
+
+    <br><hr/>
+</body>
+</html>

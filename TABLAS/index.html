@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+    <style>
+        table, tr,td,th {
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+    <header><h1><mark>TABLAS</mark></h1></header>
+    <main>
+        <section>
+        <h2>Estructura de una <mark>Tabla basica</mark></h2>
+            <table>
+                <tr> 
+                    <th>CURSO</th>
+                    <th>COMISION</th>                     
+                </tr>  
+                <tr>
+                    <td>JAVA</td>
+                    <td align="center">20355</td>
+                </tr>     
+                <tr>
+                    <td>PYTHON</td>
+                    <td align="center">34510</td>
+                </tr> 
+                <tr>
+                    <td>REACT</td>
+                    <td align="center">20354</td>
+                </tr>          
+            </table>
+        </section>
+
+        <br/> <hr/>
+
+         <section>
+        <h2>Estructura de una tabla con <mark>COLSPAN y ROWSPAN</mark></h2>
+            <table>
+                <tr> 
+                    <th>CURSO</th>
+                    <th>COMISION</th>                     
+                </tr>  
+                <tr>
+                    <td>JAVA</td>
+                    <td align="center">20355</td>
+                </tr>     
+                <tr>
+                    <td>PYTHON</td>
+                    <td align="center" rowspan="2">34510</td>
+                </tr> 
+                <tr>
+                    <td>REACT</td>
+                    
+                </tr>          
+            </table>
+        </section>
+
+        <br/> <hr/>
+
+        <section>
+            <h2>Estructura de una <mark>Tabla Completa</mark></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </thead>                           
+                    <tbody>
+                            <tr>
+                                <td>Alejandro</td>
+                                <td>Martinez</td>
+                            </tr>
+                            <tr>
+                                <td>Facundo</td>
+                                <td align="center">Uwu</td>
+                            </tr>
+                            <tr>
+                                <td>Santiago</td>
+                                <td>Santero</td>
+                            </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Aca no tiene sentido hacer un tfood</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Pero podria tener porcentajes, totales,etc</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+    </main>
+</body>
+</html>
